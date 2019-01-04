@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="ExercicioImc.js"></script>
+</head>
+
+<body>
+    <div>
+        <h2>Lista de Pessoas</h2>
+        <div>
+            <div>
+                <label for="campo-nome">Nome</label>
+            </div>
+            <div>
+                <input type="text" name="nome" id="campo-nome">
+            </div>
+            <div>
+                <label for="campo-idade">Idade</label>
+            </div>
+            <div>
+                <input type="number" name="idade" id="campo-idade">
+            </div>
+            <div>
+                <label for="campo-peso">Peso</label>
+            </div>
+            <div>
+                <input type="number" name="peso" id="campo-peso" required="required">
+            </div>
+            <div>
+                <label for="campo-altura">Altura</label>
+            </div>
+            <div>
+                <input type="number" name="altura" id="campo-altura" required="required" onblur="calcular()">
+            </div>
+        </div>
+        <div>
+            <table id="tabela-main">
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Peso</th>
+                        <th>Altura</th>
+                        <th>Imc</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Peso</th>
+                        <th>Altura</th>
+                        <th>Imc</th>
+                        <th>Situação</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div>
+            <div>
+                <button onclick="mostrar()">Calcular</button>
+            </div>
+            <div>
+                <button onclick="salvar()">Salvar</button>
+            </div>
+            <div>
+                <button onclick="limpar()">Limpar</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro</title>
+</head>
+<body>
+	<div>
+	<div>
+		<h1>DADOS BASICOS</h1>
+	</div>
+	<hr>
+	<label for="nome">Nome *</label>
+	<div>
+		<input type="text" id="nome" name="nome" value="Nicholas Alexi">
+	</div>
+	<div>
+		<div>
+			<label>Tipo *</label>
+		</div>
+		<div>
+			<input type="radio" id="tipo-interno" name="intExt" value="0">
+			<label for="tipo-interno">Interno</label>
+		</div>
+		<div>
+			<input type="radio" id="tipo-externo" name="intExt" value="1">
+			<label for="tipo-externo">Externo</label>
+		</div>
+	</div>
+	<div>
+		<label>Genero *</label>
+	</div>
+	<div>
+		<input type="radio" id="genero-feminino" name="genero" value="0">
+		<label for="genero-feminino">Feminino</label>
+	</div>
+	<div>
+		<input type="radio" id="genero-masculino" name="genero" value="1">
+		<label for="genero-masculino">Masculino</label>
+	</div>
+	</div>
+	<hr>
+	<div>
+	<div>
+		<label for="estado-civil">Estado Civil *</label>
+	</div>	
+	<div>
+		<select id="estado-civil" name="categoriaEstadoCivil">
+			<option disabled="disabled" selected="selected">selecione categoria</option>
+			<option value="solteiro">Solteiro</option>
+			<option value="casado">Casado</option>
+			<option value="viuvo">viuvo</option>
+		</select>
+	</div>
+	<div>
+		<label for="dataNascimento">Data de Nascimento *</label>
+	</div>
+	<div>
+		<input type="date" id="dataNascimento" name="cadastroNascimento">
+	</div>
+	<div>
+		<label for="cpf">CPF *</label>
+	</div>
+	<div>
+		<input type="text" id="cpf" name="cadastroCpf">
+	</div>
+	<div>
+		<label for="rg">RG</label>
+	</div>
+	<div>
+		<input type="text" id="rg" name="cadastroRg">
+	</div>
+	</div>
+	<hr>
+	<div>
+		<label for="observacao">Observação</label>
+	</div>
+	<div>
+		<textarea name="cadastroObservacao" id="observacao"></textarea>
+	</div>
+	<hr>
+	<h3>NATURALIDADE</h3>
+	<div>
+	<div>
+		<label for="unidade-federativa">Unidade Federativa *</label>
+	</div>
+	<div>
+		<select id="unidade-federativa" name="cadastroUnidadeFederativa">
+		<option disabled="disabled" selected="selected">Selecione Estado</option>
+		<option value="0">Acre</option>
+		<option value="1">Alagoas (AL)</option>  
+		<option value="2">Amapá (AP)</option>
+		<option value="3">Amazonas (AM)</option>
+		<option value="4">Bahia (BA)</option>
+		<option value="5">Ceará (CE)</option>
+		<option value="6">Distrito Federal (DF)</option>
+		<option value="7">Espírito Santo (ES)</option>
+		<option value="8">Goiás (GO)</option>
+		<option value="9">Maranhão (MA)</option>
+		<option value="10">Mato Grosso (MT)</option>
+		<option value="11">Mato Grosso do Sul (MS)</option>
+		<option value="12">Minas Gerais (MG)</option>
+		<option value="13">Pará (PA)</option>
+		<option value="14">Paraíba (PB)</option>
+		<option value="15">Paraná (PR)</option>
+		<option value="16">Pernambuco (PE)</option> 
+		<option value="17">Piauí (PI)</option>
+		<option value="18">Rio de Janeiro (RJ)</option>	
+		<option value="19">Rio Grande do Norte (RN)</option>
+		<option value="20">Rio Grande do Sul (RS)</option>
+		<option value="21">Rondônia (RO)</option>
+		<option value="22">Roraima (RR)</option>
+		<option value="23">Santa Catarina (SC)</option>
+		<option value="24">São Paulo (SP)</option>
+		<option value="25">Sergipe (SE)</option>
+		<option value="26">Tocantins (TO)</option>
+		</select>
+	</div>
+	<div>
+		<label for="cidade">Cidade</label>
+	</div>
+	<div>
+		<select id="cidade" name="cadastroCidade">Cidade *
+			<option disabled="disabled" selected="selected">Selecione Cidade</option>
+			<option value="0">Blumenau</option>
+			<option value="1">Indaial</option>
+			<option value="2">Rio do Sul</option>
+			<option value="3">Gaxpa</option>
+			<option value="4">Bruxque</option>
+			<option value="5">Pomerroda</option>
+		</select>
+	</div>
+	</div>
+	<div>
+	<h4>Endereço</h4>
+	<hr>
+		<label for="unidade-federativaUm">Unidade Federativa *</label>
+	</div>
+	<div>
+		<select id="unidade-federativaUm" name="cadastroUnidadeFederativa">
+		<option disabled="disabled" selected="selected">Selecione Estado</option>
+		<option value="0">Acre</option>
+		<option value="1">Alagoas (AL)</option>  
+		<option value="2">Amapá (AP)</option>
+		<option value="3">Amazonas (AM)</option>
+		<option value="4">Bahia (BA)</option>
+		<option value="5">Ceará (CE)</option>
+		<option value="6">Distrito Federal (DF)</option>
+		<option value="7">Espírito Santo (ES)</option>
+		<option value="8">Goiás (GO)</option>
+		<option value="9">Maranhão (MA)</option>
+		<option value="10">Mato Grosso (MT)</option>
+		<option value="11">Mato Grosso do Sul (MS)</option>
+		<option value="12">Minas Gerais (MG)</option>
+		<option value="13">Pará (PA)</option>
+		<option value="14">Paraíba (PB)</option>
+		<option value="15">Paraná (PR)</option>
+		<option value="16">Pernambuco (PE)</option> 
+		<option value="17">Piauí (PI)</option>
+		<option value="18">Rio de Janeiro (RJ)</option>	
+		<option value="19">Rio Grande do Norte (RN)</option>
+		<option value="20">Rio Grande do Sul (RS)</option>
+		<option value="21">Rondônia (RO)</option>
+		<option value="22">Roraima (RR)</option>
+		<option value="23">Santa Catarina (SC)</option>
+		<option value="24">São Paulo (SP)</option>
+		<option value="25">Sergipe (SE)</option>
+		<option value="26">Tocantins (TO)</option>
+		</select>
+	</div>
+	<div>
+		<label for="cidadeUm">Cidade</label>
+	</div>
+	<div>
+		<select id="cidadeUm" name="cadastroCidade">Cidade *
+			<option disabled="disabled" selected="selected">Selecione Cidade</option>
+			<option value="0">Blumenau</option>
+			<option value="1">Indaial</option>
+			<option value="2">Rio do Sul</option>
+			<option value="3">Gaxpa</option>
+			<option value="4">Bruxque</option>
+			<option value="5">Pomerroda</option>
+		</select>
+	</div>
+	<div>
+		<label for="cep">CEP *</label>
+	</div>
+	<div>
+		<input type="text" id="cep" name="cadastroCep">
+	</div>
+		<div>
+		<label for="bairro">Bairro *</label>
+	</div>
+	<div>
+		<input type="text" id="bairro" name="cadastroBairro">
+	</div>
+	<div>
+		<label for="logradouro">Logradouro *</label>
+	</div>
+	<div>
+		<input type="text" id="logradouro" name="cadastroLogradouro">
+	</div>
+	<div>
+		<label for="numero">Numero *</label>
+	</div>
+	<div>
+		<input type="text" id="numero" name="cadastroNumero">
+	</div>
+	<div>
+		<label for="complemento">Complemento</label>
+	</div>
+	<div>
+		<textarea name="cadastroComplento" id="complemento"></textarea>
+	</div>
+	</div>
+	<h4>SISTEMA</h4>
+	<hr>
+	<div>
+	<div>
+		<label for="login">Login *</label>
+	</div>
+	<div>
+		<input type="text" id="login" ame="cadastroLogin">
+	</div>
+	<div>
+		<label for="senha">Digite sua senha</label>
+	</div>
+	<div>
+		<input type="password" id="senha" name="cadastroSenha">
+	</div>
+	<div>
+		<label for="privilegio">Privilegio *</label>
+	</div>
+	<div>
+		<select name="cadastroPrivilegio" id="privilegio">
+		<option disabled="disabled" selected="selected">selecione</option>
+		<option value="0" >Mestre</option>
+		<option value="1">Master Mestre</option>
+		<option value="muito">Super Sayajin</option>
+		</select>
+	</div>
+	</div>
+	<table>
+		<thead>
+		<tr>
+			<th>
+				<img src="disquete.jpg" alt="imagem de disquete" width="35" height="35"></th>
+			<th>
+				<button>SALVAR</button></th>
+		</tr>
+		</thead>
+	</table>
+</body>
+</html>

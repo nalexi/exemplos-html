@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exemplo Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <script src="ExemploFormValidation.js"></script>
+<body>
+    <form action="Salva.java" method="GET" onsubmit="validar()">
+
+        <label for="campo-nome">Nome</label>
+        <input type="text" id="campo-nome" name="nome" required="required">
+
+        <label for="campo-sobrenome">Sobrenome</label>
+        <input type="text" name="sobrenome" id="campo-sobrenome" required="required" >
+
+        <label for="campo-idade">Idade</label>
+        <input type="number" name="idade" id="campo-idade" min="0" max="120" required="required">
+
+        <input type="submit" value="aqui nao">
+    </form>
+</body>
+
+</html>
